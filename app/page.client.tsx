@@ -172,7 +172,7 @@ export default function ValentinesCard() {
                 top: noPosition.y !== 0 ? `${noPosition.y}px` : 'auto',
                 zIndex: 10000,
               }}
-              className="bg-gray-300 text-gray-700 px-8 py-4 rounded-full text-xl font-bold hover:bg-gray-400 transition-all shadow-md active:scale-95"
+              className="bg-gray-300 text-gray-700 px-8 py-4 rounded-full text-xl font-bold hover:bg-gray-400 transition-all shadow-md active:scale-95 relative z-[10002]"
             >
               No 😔
             </button>
