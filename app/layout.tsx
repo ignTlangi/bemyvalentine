@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Quicksand } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const quicksand = Quicksand({ subsets: ['latin'] });
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={quicksand.className}>{children}</body>
+      <body className={quicksand.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
